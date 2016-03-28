@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.ccloomi.com"
-	xmlns="http://www.ccloomi.com"
+	targetNamespace="http://ccloomi.github.io/xsd/dubbo"
+	xmlns="http://ccloomi.github.io/xsd/dubbo"
 	elementFormDefault="qualified">
 	<xsd:element name="application">
 		<xsd:annotation>
