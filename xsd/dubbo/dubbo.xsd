@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ccloomi.com"
+	xmlns="http://www.ccloomi.com"
+	elementFormDefault="qualified">
+	<xsd:element name="application">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[应用名称]]>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="registry">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[注册中心]]>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="address" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="protocol">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[协议]]>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+			<xsd:attribute name="port" type="xsd:int"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="service">
+		<xsd:annotation>
+			<xsd:documentation>
+				<![CDATA[开放服务注册]]>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="interface" type="xsd:string"/>
+			<xsd:attribute name="ref" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
